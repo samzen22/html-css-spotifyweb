@@ -176,7 +176,105 @@ a:hover {
 /* FOOTER */
 .ms-footer {
   background-color: #282828;
-  height: 80px
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+.ms-footer img {
+  width: 45px;
+}
+.ms-footer p {
+  color: #6a6a6a;
+  font-weight: bold;
+}
+.icon-footer {
+  padding: 0 7px;
+  font-size: 15px;
+}
+
+.brano-nome {
+  margin-left: 10px;
+  margin-right: 35px;
+}
+
+.player-button {
+  justify-content: center;
+}
+.player-button i {
+  color: white;
+  font-size: 20px;
+  padding: 0 13px;
+}
+.player-button i.far.fa-play-circle {
+  font-size: 30px;
+}
+.player-button i.far.fa-play-circle:hover{
+  transform: scale(1.1);
+}
+
+.player-bar {
+  margin-top: 13px;
+}
+.player-bar p {
+  margin: 0 10px;
+  color: white;
+}
+.player-line {
+  border: 2px solid #6a6a6a;
+  width: 255px;
+  height: 0px;
+  cursor: pointer;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.player-change {
+  border: 2px solid lightgray;
+  width: 75px;
+  height: 0px;
+  cursor: pointer;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.player-change:hover {
+  border: 2.5px solid #48fb47;
+  width: 62px;
+}
+.player-change:hover + .circle-volume {
+ display: inline-block;
+}
+
+
+
+
+
+.volume-line {
+  border: 2px solid #6a6a6a;
+  width: 75px;
+  height: 0px;
+  cursor: pointer;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.volume-change {
+  border: 2px solid lightgray;
+  width: 45px;
+  height: 0px;
+  cursor: pointer;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.volume-change:hover {
+  border: 2.5px solid #48fb47;
+  width: 32px;
+}
+.circle-volume {
+  color: lightgray;
+  display: none;
+}
+.volume-change:hover + .circle-volume {
+ display: inline-block;
 }
 /* FINE FOOTER */
 
