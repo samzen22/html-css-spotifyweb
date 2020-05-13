@@ -112,8 +112,21 @@ a:hover {
   overflow: hidden;
 }
 
+
+/* icone xs menu */
+.ms-icon-xs {
+  display: none;
+}
+.ms-icon-xs img {
+  width: 40px;
+  padding: 10px 5px;
+}
+/* fine icone xs menu */
 /* fine navbar menu */
 
+
+
+/*************sezione main play**********/
 .ms-main {
   background-color: #141922;
   width: calc( 100% - 225px );
@@ -122,7 +135,8 @@ a:hover {
   overflow-y: auto;
 }
 
-/* sezione effettua upgrade */
+
+/* sezione effettua upgrade main*/
 .ms-main-top {
   background-color: rgba(0, 0, 0, 0.4);
   width: calc( 100% - 225px );
@@ -131,7 +145,24 @@ a:hover {
   top: 0;
   right: 0;
 }
+.upgrade {
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  max-width: 210px;
+  border: 1px solid white;
+  float: right;
+  margin: 12px;
+  font-size: 0.8em;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.upgrade:hover {
+  transform: scale(1.1);
+}
 /* fine sezione effettua upgrade */
+
+
 
 
 /* sezione play */
@@ -148,3 +179,30 @@ a:hover {
   height: 80px
 }
 /* FINE FOOTER */
+
+
+
+@media all and (max-width: 575px) {
+  .ms-nav {
+    width: 60px;
+  }
+  .ms-main {
+    width: calc( 100% - 60px );
+  }
+  .ms-main-top {
+    width: calc( 100% - 60px );
+  }
+  .icon-menu,
+  .playlist-menu,
+  .ms-utente {
+    display: none
+  }
+  .ms-icon-xs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+}
