@@ -212,7 +212,6 @@ a:hover {
 .album-item {
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -221,6 +220,7 @@ a:hover {
 }
 .box-album {
   flex-basis: 170px;
+  padding-right: 10px;
 }
 .box-album a {
   text-decoration: none;
@@ -252,11 +252,6 @@ a:hover {
 .box-album:hover .icon-play-album{
   display: block;
 }
-
-
-
-
-
 .text-box-album {
   color: #6a6a6a;
   padding: 12px 0;
@@ -265,6 +260,11 @@ a:hover {
 .text-box-album h4 {
   padding-bottom: 7px;
 }
+.circle-container,
+.circle-img {
+  border-radius: 100px;
+}
+
 /* FINE MAIN */
 
 /* FOOTER */
