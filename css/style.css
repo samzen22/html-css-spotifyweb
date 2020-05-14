@@ -224,6 +224,7 @@ a:hover {
 }
 .box-album a {
   text-decoration: none;
+  color: white;
 }
 .box-album img {
   display: block;
@@ -343,9 +344,6 @@ a:hover {
 
 
 /*sezione footer volume*/
-.volume {
-  flex-basis: 15%;
-}
 .volume-line {
   background-color: #6a6a6a;
   width: 75px;
@@ -394,6 +392,7 @@ a:hover {
   .ms-main-top {
     width: calc( 100% - 60px );
   }
+  /*nav query*/
   .icon-menu,
   .playlist-menu,
   .ms-utente {
@@ -406,5 +405,16 @@ a:hover {
     height: 100%;
     text-align: center;
     cursor: pointer;
+  }
+  /*footer query*/
+  .icon-footer {
+    padding: 2px 4px;
+    font-size: 1em;
+  }
+  .player-button i{
+    font-size: 12px;
+  }
+  .player-button i.far.fa-play-circle {
+    font-size: 20px;
   }
 }
