@@ -181,6 +181,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 0 12px;
+  overflow-x: hidden;
 }
 .ms-footer img {
   width: 45px;
@@ -237,11 +238,11 @@ a:hover {
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
 }
-.player-change:hover {
-  border: 2.5px solid #48fb47;
+.player-bar:hover .player-change {
+  border-color: #48fb47;
   width: 62px;
 }
-.player-change:hover + .circle-volume {
+.player-bar:hover .circle-volume {
  display: inline-block;
 }
 
@@ -265,15 +266,20 @@ a:hover {
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
 }
-.volume-change:hover {
-  border: 2.5px solid #48fb47;
+.volume-bar {
+  display: flex;
+  align-items: center;
+}
+.volume-bar:hover .volume-change{
+  border-color: #48fb47;
   width: 32px;
 }
 .circle-volume {
   color: lightgray;
   display: none;
+  cursor: pointer;
 }
-.volume-change:hover + .circle-volume {
+.volume-bar:hover .circle-volume {
  display: inline-block;
 }
 /* FINE FOOTER */
