@@ -145,6 +145,7 @@ a:hover {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 5;
 }
 .upgrade {
   border-radius: 20px;
@@ -194,11 +195,76 @@ a:hover {
 .text-section-album a:hover {
   color: white;
 }
+.text-section-album li:first-child {
+  position: relative;
+}
+.text-section-album span {
+  height: 2px;
+  background-color: #48fb47;
+  width: 25px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 45px;
+}
+
+/* album box */
+.album-item {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.album-item h2 {
+  padding-bottom: 10px;
+}
+.box-album {
+  flex-basis: 170px;
+}
+.box-album a {
+  text-decoration: none;
+}
+.box-album img {
+  display: block;
+  width: 100%;
+}
+.wrapper-album {
+  position: relative;
+  width: 100%;
+}
+.icon-play-album {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0, 0.5);
+  display: none;
+}
+.icon-play-album i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+.box-album:hover .icon-play-album{
+  display: block;
+}
 
 
 
 
 
+.text-box-album {
+  color: #6a6a6a;
+  padding: 12px 0;
+  font-weight: bold;
+}
+.text-box-album h4 {
+  padding-bottom: 7px;
+}
 /* FINE MAIN */
 
 /* FOOTER */
@@ -315,7 +381,7 @@ a:hover {
   }
   .brano-nome {
     margin-right: 0;
-  }
+   }
 }
 
 @media all and (max-width: 575px) {
